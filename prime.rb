@@ -7,7 +7,7 @@ def variables(max)
     next unless p
     break if p*p > max
     counter += 1
-   (i*i).step(max,i) { |i| primes[i] = nil }
+   (p*p).step(max,p) { |x| primes[x] = nil }
   end
   puts "Solved for #{max} in #{counter} steps."
   primes.compact
