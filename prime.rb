@@ -4,3 +4,4 @@ def sieve(max)
   primes[0] = primes[1] = nil
   counter = 0
   primes.each do |p|
+    next unless p
