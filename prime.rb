@@ -1,5 +1,5 @@
 # Add  code here!
-def sieve(max)
+def prime?(max)
   primes = (0..max).to_a
   primes[0] = primes[1] = nil
   counter = 0
@@ -14,7 +14,7 @@ def sieve(max)
 end
 
 def prime?(num)
-  sieve(num).include?(num)
+  prime?(num).include?(num)
 end
 
 puts prime?(105557)
