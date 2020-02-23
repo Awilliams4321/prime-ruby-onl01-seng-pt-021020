@@ -7,3 +7,5 @@ def sieve(max)
     next unless p
     break if p*p > max
     counter += 1
+    (p*p).step(max,p) { |m| primes[m] = nil }
+  end
