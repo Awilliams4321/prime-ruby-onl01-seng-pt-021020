@@ -1,5 +1,5 @@
 # Add  code here!
-def prime?(max)
+def variables(max)
   primes = (0..max).to_a
   primes[0] = primes[1] = nil
   counter = 0
@@ -14,7 +14,7 @@ def prime?(max)
 end
 
 def prime?(num)
-  prime?(num).include?(num)
+  variables(num).include?(num)
 end
 
 puts prime?(105557)
